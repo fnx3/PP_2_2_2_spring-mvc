@@ -8,7 +8,7 @@ import java.util.List;
 
 @Service
 public class CarServiceImp implements CarService{
-    private List<Car> cars = new ArrayList<>();
+    private final List<Car> cars = new ArrayList<>();
 
     public CarServiceImp () {
         cars.add(new Car("Audi", "A6", 2006) );
