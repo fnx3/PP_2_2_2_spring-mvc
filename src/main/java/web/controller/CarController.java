@@ -14,7 +14,7 @@ import web.service.CarServiceImp;
 @RequestMapping("/cars")
 public class CarController {
 
-    private CarService carService = new CarServiceImp();
+    private final CarService carService;
 
     @Autowired
     public CarController(CarService carService) {
